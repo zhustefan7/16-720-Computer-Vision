@@ -1,0 +1,10 @@
+x = linspace(-20,20,100)
+y = 1./(1+exp(-x))
+deriv_y = (1+exp(-x)).^(-2).*exp(-x)
+figure;
+plot(x,y),hold on;
+plot(x,deriv_y)
+legend({'sigmoid' , 'derivative of sigmoid'})
+
+
+tanx = (1+exp(-x)
